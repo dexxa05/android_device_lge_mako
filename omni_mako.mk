@@ -29,15 +29,15 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/mako/device.mk)
 
-PRODUCT_NAME := omni_mako
-PRODUCT_DEVICE := mako
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 4
-PRODUCT_MANUFACTURER := LGE
+PRODUCT_NAME := omni_aries
+PRODUCT_DEVICE := aries
+PRODUCT_BRAND := xiaomi
+PRODUCT_MODEL := MI2S
+PRODUCT_MANUFACTURER := XIAOMI
 
 # Kernel inline build
-TARGET_KERNEL_CONFIG := mako_defconfig
-TARGET_VARIANT_CONFIG := mako_defconfig
-TARGET_SELINUX_CONFIG := mako_defconfig
+TARGET_KERNEL_CONFIG := aries_defconfig
+TARGET_VARIANT_CONFIG := aries_defconfig
+TARGET_SELINUX_CONFIG := aries_defconfig
 
 $(call inherit-product-if-exists, vendor/lge/mako/mako-vendor.mk)

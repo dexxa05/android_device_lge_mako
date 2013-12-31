@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/lge/mako/device.mk)
+$(call inherit-product, device/xiaomi/aries/device.mk)
 
 PRODUCT_NAME := omni_aries
 PRODUCT_DEVICE := aries
@@ -40,4 +40,4 @@ TARGET_KERNEL_CONFIG := aries_defconfig
 TARGET_VARIANT_CONFIG := aries_defconfig
 TARGET_SELINUX_CONFIG := aries_defconfig
 
-$(call inherit-product-if-exists, vendor/lge/mako/mako-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/aries/aries-vendor.mk)
